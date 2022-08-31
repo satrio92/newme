@@ -1,22 +1,26 @@
-<script setup>
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
-import HelloWorld from './components/HelloWorld.vue'
-import Navbar from './components/Navbar.vue'
-</script>
-
 <template>
-  <Navbar />
-  <img alt="Vue logo" src="./assets/logo.png" class="m-auto"/>
-  <HelloWorld msg="Hello Vue 3 + Vite" />
+  <div :data-theme="theme">
+    <Home></Home>
+  </div>
 </template>
 
+<script>
+import Home from "./components/Home.vue";
+export default {
+  data() {
+    return {
+      theme: import.meta.env.VITE_THEME,
+    };
+  },
+  components: { Home },
+};
+</script>
+
 <style>
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Poppins", sans-serif;
   text-align: center;
-  color: #2c3e50;
 }
 </style>

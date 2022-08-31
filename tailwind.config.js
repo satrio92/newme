@@ -4,8 +4,15 @@ module.exports = {
     "./index.html",
     "./src/**/*.{vue,js,ts,jsx,tsx}",
   ],
-  theme: {
-    extend: {},
+  daisyui: {
+    themes: [
+      {
+        laos: {
+          "primary": "#2DCC70",
+          "secondary": "#FFFFFF",
+        }
+      }
+    ]
   },
   plugins: [require("daisyui")],
 }
