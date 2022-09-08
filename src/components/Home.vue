@@ -7,7 +7,7 @@
         untuk memajukan kreatifitas dalam pengembangan Linux dan Open Source di
         Fakultas Ilmu Komputer Universitas Jember.
       </p>
-      <img src="../assets/saly.png" class="mx-auto lg:absolute" />
+      <img src="../assets/saly.png" class="mx-auto lg:absolute w-1/2 -z-10" />
       <a class="btn btn-secondary"
         >Yuk Cari Tau <font-awesome-icon icon="fas fa-arrow-right" class="pl-2"
       /></a>
@@ -22,9 +22,13 @@
           orang mendapatkan hak yang sama dalam berkompetisi.
         </p>
       </div>
-      <div class="content">
-        <div class="item">
-          <img src="../assets/trophy.png" alt="Trophy" />
+      <div class="content flex">
+        <div class="item flex-col max-w-xs">
+          <img
+            src="../assets/trophy.png"
+            alt="Trophy"
+            class="mx-auto lg:mb-4"
+          />
           <p class="title">Relasi</p>
           <p>
             Dapat menambah wawasan membuat terbebas dari permasalahan, relasi
@@ -32,16 +36,20 @@
             pengalaman
           </p>
         </div>
-        <div class="item">
-          <img src="../assets/computer.png" alt="Computer" />
+        <div class="item flex-col max-w-xs">
+          <img
+            src="../assets/computer.png"
+            alt="Computer"
+            class="mx-auto lg:mb-4"
+          />
           <p class="title">Bakat</p>
           <p>
             Meningkatkan dan mengembangkan potensi yang ada pada setiap
             mahasiswa secara optimal melalui berbagai kegiatan
           </p>
         </div>
-        <div class="item">
-          <img src="../assets/file.png" alt="File" />
+        <div class="item flex-col max-w-xs">
+          <img src="../assets/file.png" alt="File" class="mx-auto lg:mb-4" />
           <p class="title">Sertifikat</p>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
@@ -51,10 +59,183 @@
       </div>
     </div>
   </section>
+  <section class="container mx-auto">
+    <div class="section">
+      <div class="header">
+        <h2 class="title">Program Kerja</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
+          purus sit amet luctus venenatis, lectus magna fringilla urna,
+          porttitor
+        </p>
+      </div>
+      <div class="h-60 lg:h-96 bg-[#F8F8F8] py-12 rounded-3xl shadow-inner">
+        <swiper
+          :slidesPerView="2"
+          :spaceBetween="30"
+          :pagination="{
+            clickable: true,
+          }"
+          :modules="modules"
+          class="h-full w-full"
+        >
+          <swiper-slide class="bg-gradient-to-br from-[#B65EBA] to-[#2E8DE1]"
+            >Slide 1</swiper-slide
+          ><swiper-slide>Slide 2</swiper-slide
+          ><swiper-slide>Slide 3</swiper-slide
+          ><swiper-slide>Slide 4</swiper-slide
+          ><swiper-slide>Slide 5</swiper-slide
+          ><swiper-slide>Slide 6</swiper-slide
+          ><swiper-slide>Slide 7</swiper-slide
+          ><swiper-slide>Slide 8</swiper-slide
+          ><swiper-slide>Slide 9</swiper-slide>
+        </swiper>
+      </div>
+    </div>
+  </section>
+  <section class="container mx-auto">
+    <div class="section">
+      <div class="header">
+        <h2 class="title">Divisi Kami</h2>
+        <p>Membangun dan menggerakan kegiatan UKM LAOS</p>
+      </div>
+      <!-- Desktop -->
+      <div class="content hidden lg:flex">
+        <div class="item flex-col lg:flex-row max-w-lg">
+          <img
+            src="../assets/humas.png"
+            alt="Logo Humas"
+            class="mx-auto lg:mr-4"
+          />
+          <div class="flex flex-col justify-center">
+            <p class="title lg:text-left">Humas</p>
+            <p class="lg:text-left">
+              Divisi yang bertanggung jawab dalam perihal penyebaran informasi
+              terutama di lingkup Fakultas Ilmu Komputer Univesitas Jember.
+            </p>
+          </div>
+        </div>
+        <div class="item flex-col lg:flex-row max-w-lg">
+          <img
+            src="../assets/pemrograman.png"
+            alt="Logo Pemrograman"
+            class="mx-auto lg:mr-4"
+          />
+          <div class="flex flex-col justify-center">
+            <p class="title lg:text-left">Pemrograman</p>
+            <p class="lg:text-left">
+              Divisi yang berfokus pada pemrograman untuk mewujudkan tujuan dari
+              UKM LAOS yaitu turut andil dalam menyebarkan open source.
+            </p>
+          </div>
+        </div>
+        <div class="item flex-col lg:flex-row max-w-lg">
+          <img
+            src="../assets/os.png"
+            alt="Logo Os & Jaringan"
+            class="mx-auto lg:mr-4"
+          />
+          <div class="flex flex-col justify-center">
+            <p class="title lg:text-left">Os & Jaringan</p>
+            <p class="lg:text-left">
+              Divisi yang memberikan wawasan mengenai Linux, jaringan komputer
+              (cloud computing), hingga keamanan siber.
+            </p>
+          </div>
+        </div>
+        <div class="item flex-col lg:flex-row max-w-lg">
+          <img
+            src="../assets/multimedia.png"
+            alt="Logo Multimedia"
+            class="mx-auto lg:mr-4"
+          />
+          <div class="flex flex-col justify-center">
+            <p class="title lg:text-left">Multimedia</p>
+            <p class="lg:text-left">
+              Divisi yang berfokus pada bidang desain dan UI/UX dalam web maupun
+              aplikasi serta mengelola poster yang di sebarkan di sosial media
+              UKM LAOS.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile -->
+      <div class="content flex lg:hidden">
+        <div class="item flex-col lg:flex-row max-w-xs">
+          <img
+            src="../assets/humas.png"
+            alt="Logo Humas"
+            class="mx-auto lg:mr-4"
+          />
+          <p class="title">Humas</p>
+          <p>
+            Divisi yang bertanggung jawab dalam perihal penyebaran informasi
+            terutama di lingkup Fakultas Ilmu Komputer Univesitas Jember.
+          </p>
+        </div>
+        <div class="item flex-col lg:flex-row max-w-xs">
+          <img
+            src="../assets/pemrograman.png"
+            alt="Logo Pemrograman"
+            class="mx-auto lg:mr-4"
+          />
+          <p class="title">Pemrograman</p>
+          <p>
+            Divisi yang berfokus pada pemrograman untuk mewujudkan tujuan dari
+            UKM LAOS yaitu turut andil dalam menyebarkan open source.
+          </p>
+        </div>
+        <div class="item flex-col lg:flex-row max-w-xs">
+          <img
+            src="../assets/os.png"
+            alt="Logo Os & Jaringan"
+            class="mx-auto lg:mr-4"
+          />
+          <p class="title">Os & Jaringan</p>
+          <p>
+            Divisi yang memberikan wawasan mengenai Linux, jaringan komputer
+            (cloud computing), hingga keamanan siber.
+          </p>
+        </div>
+        <div class="item flex-col lg:flex-row max-w-xs">
+          <img
+            src="../assets/multimedia.png"
+            alt="Logo Multimedia"
+            class="mx-auto lg:mr-4"
+          />
+          <p class="title">Multimedia</p>
+          <p>
+            Divisi yang berfokus pada bidang desain dan UI/UX dalam web maupun
+            aplikasi serta mengelola poster yang di sebarkan di sosial media UKM
+            LAOS.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 </template>
 
 <script>
-export default {};
+import { Swiper, SwiperSlide } from "swiper/vue";
+import "swiper/css";
+import "swiper/css/pagination";
+
+// import required modules
+import { Pagination } from "swiper";
+
+export default {
+  name: "Homepage",
+  components: {
+    Swiper,
+    SwiperSlide,
+  },
+  setup() {
+    return {
+      modules: [Pagination],
+    };
+  },
+};
 </script>
 
 <style>
@@ -117,21 +298,25 @@ export default {};
 }
 
 .section .content {
-  @apply flex flex-wrap justify-center lg:justify-between gap-12;
+  @apply flex-wrap justify-center lg:justify-around gap-12;
 }
 
 .section .content .item {
-  @apply flex flex-col justify-center;
-  max-width: 210px;
+  @apply flex justify-center;
 }
 
 .section .content .item .title {
-  @apply order-first lg:order-none lg:mb-4 text-[20px] lg:text-3xl font-bold;
+  @apply order-first lg:order-none lg:my-4 text-[20px] lg:text-3xl font-bold;
 }
 
 .section .content .item img {
-  @apply my-4 lg:my-0 lg:mb-4 mx-auto;
-  max-width: 190px;
+  @apply my-4 lg:my-0;
+  max-width: 200px;
+}
+
+.swiper-slide {
+  @apply max-h-72 rounded-3xl;
+  background: pink;
 }
 
 @media (min-width: 1024px) {
@@ -148,10 +333,6 @@ export default {};
     bottom: 0;
     width: 40em; /* 640px */
     right: 1rem;
-  }
-
-  .section .content .item {
-    max-width: 306px;
   }
 }
 </style>
