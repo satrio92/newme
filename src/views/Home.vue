@@ -1,4 +1,9 @@
 <template>
+  <!-- 
+    TODO : 1. Membenarkan gradient pada hero section agar sesuai dengan tampilan figma
+           2. Membuat carousel proker sesuai dengan tampilan figma
+           3. Koneksi ke API BE (Proker)
+   -->
   <section class="hero">
     <div class="hero-content">
       <h1 class="title">Selamat Datang, Laosars!</h1>
