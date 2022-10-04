@@ -46,20 +46,25 @@
           <li><a>Item 3</a></li>
         </ul>
       </div>
-      <a class="btn btn-ghost normal-case text-xl"
-        ><img
+      <router-link 
+        to="/" 
+        class="btn btn-ghost text-xl"
+      > <img
           alt="Laos logo"
           src="../assets/logo.png"
-          width="38px"
-          height="38px"
+          class="w-9 h-9 mr-2"
         />
-        UKM Laos</a
-      >
+        UKM Laos
+      </router-link>
     </div>
     <div class="navbar-center hidden lg:flex">
-      <ul class="menu menu-horizontal p-0">
-        <li><a>Item 1</a></li>
-        <li tabindex="0">
+      <ul class="menu menu-horizontal p-0 font-semibold">
+        <li><router-link to="/blog">Blog</router-link></li>
+        <li><router-link to="/learningpath">Learning Path</router-link></li>
+        <li><router-link to="/event">Event</router-link></li>
+        <li><router-link to="/proker">Program Kerja</router-link></li>
+        <li><router-link to="/about">Tentang Kami</router-link></li>
+        <!-- <li tabindex="0">
           <a>
             Parent
             <svg
@@ -78,12 +83,11 @@
             <li><a>Submenu 1</a></li>
             <li><a>Submenu 2</a></li>
           </ul>
-        </li>
-        <li><a>Item 3</a></li>
+        </li> -->
       </ul>
     </div>
     <div class="navbar-end">
-      <a class="btn btn-primary">Get started</a>
+      <router-link to="/login" class="btn btn-primary text-white">Login</router-link>
     </div>
   </div>
 </template>
@@ -94,4 +98,8 @@ export default {
 };
 </script>
 
-<style></style>
+<style scoped>
+.menu .router-link-exact-active {
+  color: #2DCC70;
+}
+</style>

@@ -4,6 +4,7 @@
            2. Membuat carousel proker sesuai dengan tampilan figma
            3. Koneksi ke API BE (Proker)
    -->
+  <Navbar />
   <section class="hero">
     <div class="hero-content">
       <h1 class="title">Selamat Datang, Laosars!</h1>
@@ -228,12 +229,14 @@ import "swiper/css/pagination";
 
 // import required modules
 import { Pagination } from "swiper";
+import Navbar from '../components/Navbar.vue'
 
 export default {
   name: "Homepage",
   components: {
     Swiper,
     SwiperSlide,
+    Navbar
   },
   setup() {
     return {
