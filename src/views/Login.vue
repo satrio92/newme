@@ -1,9 +1,9 @@
 <template>
     <Navbar />
-    <section class="w-full h-screen bg-primary px-[85px] py-[50px]">
-        <div class="bg-white w-[600px] flex flex-col py-12 px-16 gap-2 rounded-xl shadow-md">
+    <section class="w-full h-screen bg-primary px-6 md:px-[85px] py-[50px]">
+        <div class="bg-white w-full md:w-[600px] flex flex-col py-12 px-8 md:px-16 gap-2 rounded-xl shadow-md">
             <p class="text-start">Selamat datang kembali!</p>
-            <h2 class="text-start text-[56px] text-black font-semibold mb-2">Sign In</h2>
+            <h2 class="text-start text-[56px] text-black font-bold mb-2">Sign In</h2>
             <div class="input-group flex flex-col text-start text-black text-sm font-light gap-2 mb-2">
                 <label for="email">Email</label>
                 <input type="email" name="email" id="email" placeholder="test1@gmail.com" class="bg-[#FFF7DE] py-3 px-5 rounded-sm text-black placeholder:text-gray-400" v-model="user.email">
@@ -39,7 +39,7 @@
                 </div>
             </div>
         </div>
-        <img src="../assets/human-illustration.png" alt="ilustrasi" class="absolute top-32 right-8">
+        <img src="../assets/human-illustration.png" alt="ilustrasi" class="absolute top-32 right-8 hidden md:block">
     </section>
 </template>
 
