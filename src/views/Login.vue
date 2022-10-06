@@ -8,7 +8,7 @@
                 <label for="email">Email</label>
                 <input type="email" name="email" id="email" placeholder="test1@gmail.com" class="bg-[#FFF7DE] py-3 px-5 rounded-sm text-black placeholder:text-gray-400" v-model="user.email">
             </div>
-            <div class="input-group flex flex-col text-start text-black text-sm font-light gap-2 mb-4">
+            <div class="input-group flex flex-col text-start text-black text-sm font-light gap-2">
                 <div class="flex justify-between">
                     <label for="password">Password</label>
                     <p class="text-gray-400">forgot password?</p>
@@ -25,18 +25,18 @@
                         <path d="M3.35 5.47c-.18.16-.353.322-.518.487A13.134 13.134 0 0 0 1.172 8l.195.288c.335.48.83 1.12 1.465 1.755C4.121 11.332 5.881 12.5 8 12.5c.716 0 1.39-.133 2.02-.36l.77.772A7.029 7.029 0 0 1 8 13.5C3 13.5 0 8 0 8s.939-1.721 2.641-3.238l.708.709zm10.296 8.884-12-12 .708-.708 12 12-.708.708z"/>
                     </svg>
                 </div>
-                <div class="flex justify-center">
-                    <button class="bg-primary text-white py-2 px-6 flex items-center gap-3 mt-6" @click="signIn()" style="border-radius: 40px">
-                        <p>SIGN IN</p>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M3.56224 13.4062H17.7466L14.3646 9.11719C14.2685 8.99531 14.3552 8.8125 14.5122 8.8125H16.031C16.2607 8.8125 16.4787 8.91797 16.6193 9.09844L20.463 13.9734C20.8497 14.4656 20.5005 15.1875 19.8747 15.1875H3.56224C3.45912 15.1875 3.37474 15.1031 3.37474 15V13.5938C3.37474 13.4906 3.45912 13.4062 3.56224 13.4062Z" fill="white"/>
-                        </svg>
-                    </button>
-                </div>
-                <div class="flex gap-2 justify-center mt-4">
-                    <p>Belum punya akun?</p>
-                    <router-link to="/register"><p class="text-primary font-medium">Sign Up</p></router-link>
-                </div>
+            </div>
+            <div class="flex justify-center mt-6">
+                <button class="bg-primary text-white py-2 px-6 flex items-center gap-3" @click="signIn()" style="border-radius: 40px">
+                    <p>SIGN IN</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M3.56224 13.4062H17.7466L14.3646 9.11719C14.2685 8.99531 14.3552 8.8125 14.5122 8.8125H16.031C16.2607 8.8125 16.4787 8.91797 16.6193 9.09844L20.463 13.9734C20.8497 14.4656 20.5005 15.1875 19.8747 15.1875H3.56224C3.45912 15.1875 3.37474 15.1031 3.37474 15V13.5938C3.37474 13.4906 3.45912 13.4062 3.56224 13.4062Z" fill="white"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="flex gap-2 justify-center mt-4">
+                <p>Belum punya akun?</p>
+                <router-link to="/register"><p class="text-primary font-medium">Sign Up</p></router-link>
             </div>
         </div>
         <img src="../assets/human-illustration.png" alt="ilustrasi" class="absolute top-32 right-8 hidden md:block">
