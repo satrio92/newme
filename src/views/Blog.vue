@@ -1,7 +1,8 @@
 <template>
     <Navbar />
     <section class="w-full h-96 flex justify-center items-center">
-        <h1 class="text-3xl text-black font-bold">Halaman Blog</h1>
+        <!-- <h1 class="text-3xl text-black font-bold">Halaman Blog</h1> -->
+        <img src="../assets/coming-soon-blog.png" alt="" class="w-96 h-96 mt-40">
     </section>
 </template>
 
