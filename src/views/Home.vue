@@ -65,7 +65,7 @@
       </div>
     </div>
   </section>
-  <section class="container mx-auto">
+  <!-- <section class="container mx-auto">
     <div class="section">
       <div class="header">
         <h2 class="title">Program Kerja</h2>
@@ -98,7 +98,7 @@
         </swiper>
       </div>
     </div>
-  </section>
+  </section> -->
   <section class="container mx-auto">
     <div class="section">
       <div class="header">
