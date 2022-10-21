@@ -220,12 +220,14 @@
       </div>
     </div>
   </section>
+  <Footer />
 </template>
 
 <script>
 import { Swiper, SwiperSlide } from "swiper/vue";
 import "swiper/css";
 import "swiper/css/pagination";
+import Footer from '../components/Footer.vue'
 
 // import required modules
 import { Pagination } from "swiper";
@@ -236,7 +238,8 @@ export default {
   components: {
     Swiper,
     SwiperSlide,
-    Navbar
+    Navbar,
+    Footer
   },
   setup() {
     return {

@@ -74,18 +74,21 @@
             </div>
         </div>
     </section>
+    <Footer />
 </template>
 
 <script>
 
 import Navbar from '../components/Navbar.vue'
 import CardPengurus from '../components/CardPengurus.vue'
+import Footer from '../components/Footer.vue'
 
 export default {
     name: 'About',
     components: {
         Navbar,
-        CardPengurus
+        CardPengurus,
+        Footer
     },
     data() {
         return {

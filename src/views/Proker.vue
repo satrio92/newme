@@ -9,18 +9,21 @@
       <CardProker :item="item" v-for="item in proker" :key="item.id"/>
     </div>
   </section>
+  <Footer />
 </template>
 
 <script>
 
 import Navbar from "../components/Navbar.vue";
 import CardProker from "../components/CardProker.vue";
+import Footer from '../components/Footer.vue'
 
 export default {
   name: "Proker",
   components: {
     Navbar,
-    CardProker
+    CardProker,
+    Footer
   },
   data() {
     return {
