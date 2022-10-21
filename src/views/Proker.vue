@@ -1,12 +1,12 @@
 <template>
   <Navbar />
   <section class="w-full flex flex-col my-16 gap-24">
-    <div class="flex flex-col gap-6 px-[150px]">
+    <div class="flex flex-col gap-6 px-12 md:px-[150px]">
       <h1 class="text-3xl text-black font-bold">OUR PROGRAM</h1>
-      <p class="text-xl text-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex comm</p>
+      <p class="md:text-xl text-black">LAOS memiliki beberapa program kerja yang dilaksanakan untuk meningkatkan kompetensi mahasiswa fakultas ilmu komputer maupun masyarakat umum di bidang teknologi</p>
     </div>
     <div class="flex justify-center gap-24 px-[72px] flex-wrap">
-      <CardProker :item="proker[0]" v-for="item in 8" :key="item.id"/>
+      <CardProker :item="item" v-for="item in proker" :key="item.id"/>
     </div>
   </section>
 </template>
@@ -27,9 +27,32 @@ export default {
       proker: [
         {
           "title": "PERTEMUAN RUTIN",
-          "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh at tortor enim, ornare. Platea sed id sit ut hendrerit egestas.",
           "img": "../src/assets/proker-1.png"
-        }
+        },
+        {
+          "title": "PENGEMBANGAN PROJECT",
+          "img": "../src/assets/proker-2.png"
+        },
+        {
+          "title": "PELATIHAN CTF",
+          "img": "../src/assets/proker-3.png"
+        },
+        {
+          "title": "PELATIHAN GIT",
+          "img": "../src/assets/proker-4.png"
+        },
+        {
+          "title": "PELATIHAN LINUX",
+          "img": "../src/assets/proker-5.png"
+        },
+        {
+          "title": "PELATIHAN UI/UX",
+          "img": "../src/assets/proker-6.png"
+        },
+        {
+          "title": "LAOS ARENA",
+          "img": "../src/assets/proker-7.png"
+        },
       ]
     }
   }
