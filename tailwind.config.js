@@ -6,6 +6,41 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        poppins: ['Poppins'],
+      },
+      text: {
+        h1: {
+          fontSize: "48px",
+          fontWeight: "600",
+          lineHeight: "64px"
+        },
+        h2: {
+          fontSize: "32px",
+          fontWeight: "600",
+          lineHeight: "42px"
+        },
+        h4: {
+          fontSize: "24px",
+          fontWeight: "600",
+          lineHeight: "32px"
+        },
+        h4: {
+          fontSize: "18px",
+          fontWeight: "600",
+          lineHeight: "26px"
+        },
+        "body-dekstop": {
+          fontSize: "15px",
+          fontWeight: "600",
+          lineHeight: "24px"
+        },
+        "body-mobile": {
+          fontSize: "10px",
+          fontWeight: "600",
+          lineHeight: "20px"
+        },
+      },
       gradientColorStops: {
         'gd-green-01': {
           '100%': '#2DCC70',
