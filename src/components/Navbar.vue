@@ -1,5 +1,5 @@
 <template>
-  <div class="navbar">
+  <!-- <div class="navbar">
     <div class="navbar-start">
       <div class="dropdown">
         <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -64,7 +64,7 @@
         <li><router-link to="/event">Event</router-link></li>
         <li><router-link to="/proker">Program Kerja</router-link></li>
         <li><router-link to="/about">Tentang Kami</router-link></li>
-        <!-- <li tabindex="0">
+        <li tabindex="0">
           <a>
             Parent
             <svg
@@ -83,12 +83,30 @@
             <li><a>Submenu 1</a></li>
             <li><a>Submenu 2</a></li>
           </ul>
-        </li> -->
+        </li>
       </ul>
     </div>
     <div class="navbar-end">
       <router-link to="/login" class="btn btn-primary text-white">Login</router-link>
     </div>
+  </div> -->
+  <div id="navbar" class="flex justify-between bg-white">
+    <div class="flex">
+      <img
+        alt="Laos logo"
+        src="../assets/logo.png"
+        class="w-9 h-9 mr-2"
+      />
+      <p>UKM LAOS</p>
+    </div>
+    <ul class="flex gap-[30px]">
+      <li><router-link to="/">Blog</router-link></li>
+      <li><router-link to="/">Learning Path</router-link></li>
+      <li><router-link to="/">Event</router-link></li>
+      <li><router-link to="/">Program Kerja</router-link></li>
+      <li><router-link to="/">Tentang Kami</router-link></li>
+    </ul>
+    <div></div>
   </div>
 </template>
 

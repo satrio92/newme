@@ -5,7 +5,7 @@
            3. Koneksi ke API BE (Proker)
    -->
   <Navbar />
-  <section class="hero">
+  <!-- <section class="hero">
     <div class="hero-content">
       <h1 class="title">Selamat Datang, Laosars!</h1>
       <p>
@@ -65,7 +65,7 @@
       </div>
     </div>
   </section>
-  <!-- <section class="container mx-auto">
+  <section class="container mx-auto">
     <div class="section">
       <div class="header">
         <h2 class="title">Program Kerja</h2>
@@ -98,14 +98,15 @@
         </swiper>
       </div>
     </div>
-  </section> -->
+  </section>
   <section class="container mx-auto">
     <div class="section">
       <div class="header">
         <h2 class="title">Divisi Kami</h2>
         <p>Membangun dan menggerakan kegiatan UKM LAOS</p>
       </div>
-      <!-- Desktop -->
+
+
       <div class="content hidden lg:flex">
         <div class="item flex-col lg:flex-row max-w-lg">
           <img
@@ -166,7 +167,6 @@
         </div>
       </div>
 
-      <!-- Mobile -->
       <div class="content flex lg:hidden">
         <div class="item flex-col lg:flex-row max-w-xs">
           <img
@@ -219,7 +219,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
   <Footer />
 </template>
 
@@ -249,7 +249,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<!-- <style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500&display=swap");
 
 .hero {
@@ -346,4 +346,4 @@ export default {
     right: 1rem;
   }
 }
-</style>
+</style> -->
